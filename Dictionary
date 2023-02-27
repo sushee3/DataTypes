@@ -1,0 +1,33 @@
+classroom = {'Student':'Sarah', 'Age': 20, 'Roll Number': 56, 'Course':'Computer Science'}
+print(classroom)
+
+print()
+for i in classroom.keys():
+  print(classroom[i])
+
+#update
+classroom['Age'] = 22
+print('\nAfter Operation', classroom)
+
+#append
+classroom['Year'] = 2019
+print('\nAfter Operation', classroom)
+
+#delete
+classroom.pop('Roll Number')
+print('\nAfter Operation', classroom)
+
+
+**********OUTPUT*************
+{'Student': 'Sarah', 'Age': 20, 'Roll Number': 56, 'Course': 'Computer Science'}
+
+Sarah
+20
+56
+Computer Science
+
+After Operation {'Student': 'Sarah', 'Age': 22, 'Roll Number': 56, 'Course': 'Computer Science'}
+
+After Operation {'Student': 'Sarah', 'Age': 22, 'Roll Number': 56, 'Course': 'Computer Science', 'Year': 2019}
+
+After Operation {'Student': 'Sarah', 'Age': 22, 'Course': 'Computer Science', 'Year': 2019}
