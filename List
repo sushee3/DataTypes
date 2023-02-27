@@ -1,0 +1,48 @@
+fruits = ['apple', 'banana', 'pear', 'grapes']
+for i in fruits:
+  print(i)
+print()
+
+#slicing
+print(fruits[1:])
+print(fruits[0])
+print(fruits[-1])
+print(fruits[:2])
+
+#operations
+#append
+fruits.append('coconut')
+print('\nAfter append', fruits)
+
+#insert
+fruits.insert(0, 'mango')
+print('\nAfter insert', fruits)
+
+#update
+fruits[2] = 'peach'
+print('\nAfter update', fruits)
+
+#delete
+del fruits[0:2]
+print('\nAfter delete', fruits)
+
+
+
+*************OUTPUT***************
+apple
+banana
+pear
+grapes
+
+['banana', 'pear', 'grapes']
+apple
+grapes
+['apple', 'banana']
+
+After append ['apple', 'banana', 'pear', 'grapes', 'coconut']
+
+After insert ['mango', 'apple', 'banana', 'pear', 'grapes', 'coconut']
+
+After update ['mango', 'apple', 'peach', 'pear', 'grapes', 'coconut']
+
+After delete ['peach', 'pear', 'grapes', 'coconut']
