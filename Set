@@ -1,0 +1,35 @@
+set1 = {1, True, 125.6, 'Tom', 'Computer', 0}
+print(set1)
+set2 = {5, 56, 'apple', False, 0, 'Computer'}
+print(set2)
+
+#insert
+set1.add(1457866666)
+print('\nAfter operation', set1)
+
+#delete
+set1.remove(125.6)
+print('\nAfter operation', set1)
+
+#union
+set3 = set1.union(set2)
+print('\nAfter operation', set3)
+
+#intersection
+set4 = set1.intersection(set2)
+print('\nAfter operation', set4)
+
+
+
+
+**************OUTPUT*************
+{0, 1, 'Computer', 'Tom', 125.6}
+{False, 'Computer', 5, 'apple', 56}
+
+After operation {0, 1, 'Computer', 1457866666, 'Tom', 125.6}
+
+After operation {0, 1, 'Computer', 1457866666, 'Tom'}
+
+After operation {0, 1, 'Computer', 5, 1457866666, 'Tom', 'apple', 56}
+
+After operation {False, 'Computer'}
