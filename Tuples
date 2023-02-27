@@ -1,0 +1,27 @@
+subject = ['maths', 'english', 'computer science', 'geometry']
+print(subject)
+print(subject[2])
+
+#append
+subject.append('history')
+print('\nAfter operation', subject)
+
+#insert
+subject.insert(2, 'economics')
+print('\nAfter operation', subject)
+
+#delete
+del subject[0]
+print('\nAfter operation', subject)
+
+
+
+**********OUTPUT***************
+['maths', 'english', 'computer science', 'geometry']
+computer science
+
+After operation ['maths', 'english', 'computer science', 'geometry', 'history']
+
+After operation ['maths', 'english', 'economics', 'computer science', 'geometry', 'history']
+
+After operation ['english', 'economics', 'computer science', 'geometry', 'history']
